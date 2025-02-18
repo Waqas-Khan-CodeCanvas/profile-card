@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: #fff;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 12px;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    transform: translateY(-30px);
+    text-align: center;
+
+
+}
+.row1 img{
+    background: #fff;
+    padding: 3px;
+    border-radius: 6px;
+    transform: translateY(-20px);
+}
+.row1 i{
+    display: block;
+    background: #f2f2f2;
+    padding:3px 25px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+}
+.row1 h1{
+    color: #5b5a5a;
+    font-size: 22p;
+    margin-bottom: 3px;
+}
+.row1 p{
+    font-size: 10px;
+}
+.row2{
+    background: transparent;
+    padding: 10px 20px;
+}
+
+.row2 span{
+    width: 50px;
+    height: 50px;
+    background: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05);
+}
+.row3{
+    padding: 0px 0px;
+    position: relative;
+}
+.row3::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    left: 20px;
+    background: #e1e1e8;
+    border-radius: 6px;
+}
+.row3 a{
+    z-index: 1;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    padding:10px 20px ;
+}
+.row3::before~a:hover{
+    left: 100px;
+}
+.row4{
+    padding: 0 20px;
+}
+.row4 p{
+    font-size: 14px;
+    line-height: 16px;
+    text-wrap: balance;
+}
+.row4 h3{
+    font-size: 15px;
+    margin: 5px 0;
+}
+.row4 div{
+    background: #f2f2f2;
+    width: 100%;
+    padding: 5px 10px;
+    /* text-align: center; */
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+button{
+    padding: 10px;
+    width: 95%;
+    margin: 8px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background: #5700ed;
+    font-size: 16px;
+    color: #fff;
+}
